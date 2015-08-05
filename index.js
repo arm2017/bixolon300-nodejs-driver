@@ -16,6 +16,7 @@ exports.init = function() {
 		return instant;
 	}
 
+	this.MAX_CHAR_PER_LINE = 80;
 	var exec = require('child_process').exec;
 	var validJdk = false;
 
@@ -70,9 +71,9 @@ exports.init = function() {
 		var line = _plines.join("#line#");
 		var enLine = encodeURI(line);
 		// console.info(__dirname);
-		var cmd = "java -cp \"%dir\\lib\\b300driver.jar\" com.dev.api.BIXOLON_300_Driver %parm1"
+		var cmd = "java -cp \"%dir\\lib\\b300driver.jar\" com.dev.api.BIXOLON_300_Driver \"%parm1\""
 		var command = cmd.replace("%dir", __dirname).replace("%parm1", enLine);
-		console.info(command);
+//		console.info(command);
 
 		exec(command, function(error, stdout, stderr) {
 			if (_fn !== undefined) {
