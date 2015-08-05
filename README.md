@@ -4,6 +4,8 @@ BIXOLON SRP-F310 java driver test for window
 ##
 
 ประกาศตัวแปร
+
+
 var printer = require('bixolon300-nodejs-driver').init();
 
 ใช้งาน
