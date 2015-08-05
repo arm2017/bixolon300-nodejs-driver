@@ -22,7 +22,8 @@ BIXOLON SRP-F310 java driver test for window
 		});
 
 ปล..
-function(e, sout, serr)
-e : not null if [error]
-sout : output from command lines
-serr : output from command lines
+
+	function(e, sout, serr)
+	e : not null if [error]
+	sout : output from command lines
+	serr : output from command lines
